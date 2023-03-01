@@ -1,1 +1,4 @@
-<p>search-bar works!</p>
+<form (submit)="onSubmit($event)">
+  <input (input)="onInput($event)">
+  <button type="submit">Search</button>
+</form>
