@@ -1,5 +1,5 @@
 
-interface WikipediaData {
+export interface WikipediaData {
   ns: number;
   pageid: number;
   size: number;

@@ -1,4 +1,8 @@
-<form (submit)="onSubmit($event)">
-  <input (input)="onInput($event)">
-  <button type="submit">Search</button>
-</form>
+<div class="box">
+  <form (submit)="onSubmit($event)">
+    <div class="field has-addons">
+      <input placeholder="Enter Search Term" class="input" (input)="onInput($event)">
+      <button class="button" type="submit">Search</button>
+    </div>
+  </form>
+</div>

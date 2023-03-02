@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { WikipediaData } from 'src/app/wikipedia.interfaces';
 
 @Component({
   selector: 'app-page-list',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./page-list.component.css']
 })
 export class PageListComponent {
+  @Input() public pages: WikipediaData[];
 
+  constructor() {
+    this.pages = [];
+  }
 }
